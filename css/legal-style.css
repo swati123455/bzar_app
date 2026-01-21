@@ -1,0 +1,467 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3e2;
+    color: #333;
+    background-size: cover; /* Ensures the image covers the screen without distortion */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-image: url(../images/image1.png);
+    /*background-image: url(../images/recipes_BG.png);*/
+}
+
+
+/* Image Styling */
+img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+    padding: 0 15px; /* Combined left and right padding */
+    
+}
+
+/* Navbar Container */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #86373E;
+}
+
+/* Search Bar Styling */
+.nav-links input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+#login button {
+    background-color: ghostwhite;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    color: white;
+    background-color: #86373E;
+}
+
+button a{
+    color: black;
+    font-weight: 300px;
+    font-size: 15px;
+    font-style: Georgia;
+}
+
+/* ---------------- terms.html ---------------- */
+/* Legal Section Styling */
+.legal-section {
+    padding: 60px 80px;
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    margin-bottom: 70px;
+}
+
+/* Overlay for blur effect */
+.legal-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: whitesmoke;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border-style: solid;
+    border-width: medium;
+    border-color: linear-gradient(90deg, #C19A6B, #D2B48C);
+    border-radius: 2px;
+}
+    
+
+
+
+/* Page Title */
+.legal-section h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #422800;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #C19A6B, #D2B48C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Subheadings */
+.legal-section h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #86373E;
+    font-family: Georgia, serif;
+    border-bottom: 2px solid #C19A6B;
+    padding-bottom: 8px;
+    font-weight: bold; /* Added bold style */
+}
+
+/* Legal Text */
+.legal-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300; /* Added lighter weight */
+}
+
+/* Legal Lists */
+.legal-section ul {
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    font-weight: 300; /* Made text weight lighter */
+}
+
+.legal-section li {
+    margin-bottom: 10px;
+}
+
+/* Legal Section Link Styling */
+.legal-section a {
+    color: #86373E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-section a:hover {
+    color: #C19A6B;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .legal-section {
+        padding: 30px 20px;
+    }
+
+    .legal-section h1 {
+        font-size: 36px;
+    }
+
+    .legal-section h2 {
+        font-size: 22px;
+    }
+
+    .legal-section p {
+        font-size: 18px;
+    }
+}
+
+.legal-section .back-link {
+    text-align: right; /* Aligns the text/link to the right */
+    margin-top: 20px;  /* Adds spacing above the link */
+}
+
+
+/* ----------------- privacy.html ----------------- */
+.privacy-section {
+    padding: 60px 80px;
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    margin-bottom: 70px;
+}
+
+/* Overlay for blur effect */
+.privacy-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: whitesmoke;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border-style: solid;
+    border-width: medium;
+    border-color: linear-gradient(90deg, #C19A6B, #D2B48C);
+    border-radius: 2px;
+}
+
+/* Page Title */
+.privacy-section h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #422800;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #C19A6B, #D2B48C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Subheadings */
+.privacy-section h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #86373E;
+    font-family: Georgia, serif;
+    border-bottom: 2px solid #C19A6B;
+    padding-bottom: 8px;
+}
+
+/* Privacy Text */
+.privacy-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* Legal Lists */
+.privacy-section ul {
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    font-weight: 300; /* Made text weight lighter */
+}
+
+.privacy-section li {
+    margin-bottom: 10px;
+}
+
+/* Privacy Section Link Styling */
+.privacy-section a {
+    color: #86373E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-section a:hover {
+    color: #C19A6B;
+}
+
+.privacy-section .back-link {
+    text-align: right; /* Aligns the text/link to the right */
+    margin-top: 20px;  /* Adds spacing above the link */
+    
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: 30px 20px;
+    }
+
+    .privacy-section h2 {
+        font-size: 36px;
+    }
+
+    .privacy-section h3 {
+        font-size: 22px;
+    }
+
+    .privacy-section p {
+        font-size: 18px;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-image: url(../images/footer_bg.png);
+    background-size: contain; /* Ensures the full image is displayed */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    background-color: #ece9e2; /* Light beige background */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    text-align: center;
+    min-height: 400px; /* Adjust height if needed */
+    border-top: solid;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #86373E;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    align-items: left;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-column ul li a:hover {
+    color: #86373E;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: 1px solid #86373E;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-column button {
+    background-color: #86373E;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    background-color: #333;
+}
+
+.reach-out {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reach-out a {
+    font-size: 2.0rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reach-out a:hover {
+    color: #86373E;
+}
+
+
+
+.footer-message {
+    padding-top: 350px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer-copyright {
+    font-size: 1.0rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+

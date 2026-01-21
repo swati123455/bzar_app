@@ -1,0 +1,377 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e4d9c2;
+    color: #333;
+    background-image: url(../images/recipes_BG.png);
+
+    background-size: cover; /* Ensures the image covers the screen without distortion */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+
+/* Image Styling */
+img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+    padding: 0 15px; /* Combined left and right padding */
+    
+}
+
+/* Navbar Container */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #86373E;
+}
+
+/* Search Bar Styling */
+.nav-links input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+#login button {
+    background-color: ghostwhite;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    color: white;
+    background-color: #86373E;
+}
+
+/* Main Container Styling */
+.container {
+    max-width: 900px; /* Maximum width of container */
+    width: 1000px; /* Fixed width for container */
+    padding: 20px; /* Padding inside the container */
+    margin-left: 400px; /* Left margin for centering */
+    background: #fff; /* White background for container */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners for container */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Payment Section Heading */
+.payment h1 {
+    font-size: 26px; /* Heading font size */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    text-align: center; /* Centered text */
+    color: #343a40; /* Darker text color for contrast */
+}
+
+/* Flex Row and Column Setup */
+.row {
+    display: flex; /* Flexbox layout for rows */
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    gap: 20px; /* Space between columns */
+}
+
+.col {
+    flex: 1; /* Allow columns to grow equally */
+    min-width: 200px; /* Minimum width for columns */
+}
+
+/* Input Box Formatting */
+.inputBox {
+    margin-bottom: 15px; /* Bottom margin for spacing */
+}
+
+.inputBox label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+    color: #495057; /* Label text color */
+}
+
+.inputBox input,
+.inputBox select {
+    width: 400px; /* Fixed width for inputs and selects */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ced4da; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.inputBox input:focus,
+.inputBox select:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Submit Button Styled */
+.submit_btn {
+    display: block; /* Block display for full width */
+    width: 100%; /* Full width of the button */
+    padding: 12px; /* Padding inside submit button */
+    background-color: #e6e0cf; /* Background color for submit button */
+    color: #333; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.submit_btn:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #86373e; /* Change background color on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hide popup by default */
+    position: fixed; /* Fixed positioning for overlay */
+    z-index: 10; /* Above other elements */
+    left: 0; /* Align to left */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width overlay */
+    height: 100%; /* Full height overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.popup-content {
+    position: relative; /* Position relative for content */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 15% auto; /* Center the popup vertically */
+    padding: 20px; /* Padding inside popup */
+    width: 50%; /* Width of the popup */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for popup */
+}
+
+.popup-content h2 {
+    color: #86373e; /* Title color */
+}
+
+.close {
+    position: absolute; /* Absolute positioning for close button */
+    top: 10px; /* Top positioning */
+    right: 20px; /* Right positioning */
+    font-size: 25px; /* Close button size */
+    color: #333; /* Color for close button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Loading Spinner Styles */
+.spinner {
+    display: flex; /* Flexbox for center alignment */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    position: fixed; /* Fixed positioning for overlay */
+    z-index: 20; /* Above other elements */
+    left: 0; /* Align to left */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width overlay */
+    height: 100%; /* Full height overlay */
+    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+}
+
+.loader {
+    border: 8px solid #86373e; /* Border color and size */
+    border-top: 8px solid #e6e0cf; /* Different color for top border */
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Loader size */
+    height: 60px; /* Loader height */
+    animation: spin 1s linear infinite; /* Rotation animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Start rotation */
+    100% { transform: rotate(360deg); } /* Full rotation */
+}
+
+/* Footer Styling */
+footer {
+    background-image: url(../images/footer_bg.png);
+    background-size: contain; /* Ensures the full image is displayed */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    background-color: #ece9e2; /* Light beige background */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    text-align: center;
+    min-height: 400px; /* Adjust height if needed */
+    border-top: solid;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #86373E;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    align-items: left;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-column ul li a:hover {
+    color: #86373E;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: 1px solid #86373E;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-column button {
+    background-color: #86373E;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    background-color: #333;
+}
+
+.reach-out {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reach-out a {
+    font-size: 2.0rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reach-out a:hover {
+    color: #86373E;
+}
+
+
+
+.footer-message {
+    padding-top: 350px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer-copyright {
+    font-size: 1.0rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+

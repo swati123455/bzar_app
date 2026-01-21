@@ -1,0 +1,88 @@
+/* 
+   Code adapted from: https://codepen.io/alexlya/pen/XdyErG
+   Original creator: Alex Lya
+*/
+
+
+html, body {
+  height: 100%;
+  background: #2F2F31;
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+
+#uc {
+  color: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
+  text-align: center;
+  font-size: 4rem;
+  height: 100px;
+  top: 50%;
+  position: relative;
+  margin-top: -50px;
+}
+
+#uc span {
+  text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+#loading {
+  width: 400px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  margin: 40px auto;
+  box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+#loading #wiggle {
+  width: 80px;
+  height: 18px;
+  border: 1px solid #aaa;
+  background: #ffffff;
+  border-radius: 50px;
+  margin-left: 0px;
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
+  animation: wiggle 5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 318px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+#back-home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#back-home button {
+  background-color: #ffffff;
+  color: #2F2F31;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#back-home button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}

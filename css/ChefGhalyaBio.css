@@ -1,0 +1,473 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e4d9c2;
+    color: #333;
+    background-image: url(../images/recipes_BG.png);
+
+    background-size: cover; /* Ensures the image covers the screen without distortion */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+
+/* Image Styling */
+img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+    padding: 0 15px; /* Combined left and right padding */
+    
+}
+
+/* Navbar Container */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #86373E;
+}
+
+/* Search Bar Styling */
+.nav-links input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+#login button {
+    background-color: ghostwhite;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    color: white;
+    background-color: #86373E;
+}
+
+
+
+
+
+/* Chef Bio Section */
+.chef-bio-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.3); /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Stronger blur */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chef-icon-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 30%;
+    border: 3px solid #86373E;
+}
+
+.chef-intro-container {
+    max-width: 60%;
+    text-align: left;
+}
+
+.chef-intro-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.chef-intro-container h3 {
+    font-size: 1.5em;
+    color: #86373E;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.chef-intro-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Certificates Section */
+.certificates-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(60, 60, 60, 0.1); /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Blurred effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Certificate Images */
+.certificate {
+    width: 250px;
+    height: auto;
+    border-radius: 10px; /* Slight rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%; /* Increase the max-width */
+    max-height: 90%; /* Limit the max-height */
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: contain; /* Keeps the aspect ratio intact */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Courses Section Styles */
+.courses-section {
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center-align text */
+}
+
+.main-heading {
+    font-size: 36px; /* Larger font size for main heading */
+    color: #333;
+    margin-bottom: 40px; /* Space below the main heading */
+}
+
+/* Course Category Section */
+.course-category {
+    display: flex;
+    flex-direction: column; /* Stack the header above the cards */
+    align-items: center; /* Center-align the category */
+    margin-top: 30px;
+}
+
+.course-category h3 {
+    font-size: 36px;
+    text-align: center; /* Center-align the heading */
+    margin-top: 0; /* No top margin */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    /* Color & Styling */
+    color: #422800; /* Deep brown for headings */
+    background: linear-gradient(90deg, #C19A6B, #D2B48C); /* Golden gradient background */
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for emphasis */
+    padding: 10px 20px;
+    border-bottom: 3px solid #C19A6B; /* Subtle golden underline */
+    
+    /* Blurry White Background */
+    position: relative;
+    z-index: 1;
+}
+
+/* Background overlay */
+.course-category h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: -1;
+    border-radius: 8px; /* Soft rounded edges */
+}
+
+
+
+
+.card {
+    max-width: 350px; /* Restrict card width */
+    background-color: #ffffff; /* Set a clean white background */
+    padding: 20px; /* Add padding inside the card */
+    margin: 15px; /* Space between cards */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center-align card content */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.card-img {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 20px; /* Match card's corner rounding */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.card h4 {
+    font-size: 22px; /* Larger font size for titles */
+    color: #333; /* Neutral text color */
+    margin: 10px 0; /* Space around heading */
+    font-family: 'Georgia', serif; /* Match existing font style */
+    text-align: center; /* Center align titles */
+}
+
+.card p {
+    font-size: 16px; /* Slightly smaller font for descriptions */
+    color: #666; /* Muted text color */
+    text-align: center; /* Center align text */
+    margin: 10px 0; /* Space around paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+.card-details {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space out details */
+    width: 100%; /* Full width of card */
+    font-size: 14px; /* Smaller font for details */
+    color: #555; /* Neutral detail color */
+    margin-top: 10px; /* Space above details */
+}
+
+.card-details span {
+    display: inline-block; /* Inline display for spans */
+}
+
+.view-recipe-btn {
+    background-color: #FFB6C1; /* Muted Pink for buttons */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above button */
+    font-size: 14px; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.view-recipe-btn:hover {
+    background-color: #E63946; /* Vibrant red on hover */
+}
+
+
+
+
+/* Footer Styling */
+footer {
+    background-image: url(../images/footer_bg.png);
+    background-size: contain; /* Ensures the full image is displayed */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    background-color: #ece9e2; /* Light beige background */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    text-align: center;
+    min-height: 400px; /* Adjust height if needed */
+    border-top: solid;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #86373E;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    align-items: left;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-column ul li a:hover {
+    color: #86373E;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: 1px solid #86373E;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-column button {
+    background-color: #86373E;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    background-color: #333;
+}
+
+.reach-out {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reach-out a {
+    font-size: 2.0rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reach-out a:hover {
+    color: #86373E;
+}
+
+
+
+.footer-message {
+    padding-top: 350px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer-copyright {
+    font-size: 1.0rem;
+    color: #666;
+    margin: 5px 0 0;
+}

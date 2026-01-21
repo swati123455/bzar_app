@@ -1,0 +1,381 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3e2;
+    color: #333;
+    background-image: url('../images/image1.png'); /* Background image path */
+    background-size: cover; /* Ensures the image covers the screen without distortion */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+
+/* Image Styling */
+img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+    padding: 0 15px; /* Combined left and right padding */
+    
+
+}
+
+/* Navbar Container */
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #86373E;
+}
+
+/* Search Bar Styling */
+.nav-links input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+#login button {
+    background-color: ghostwhite;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    color: white;
+    background-color: #86373E;
+}
+
+
+/* Container for the Plans */
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+    padding: 80px;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+/* Plan Titles */
+
+.title {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    /* Color & Styling */
+    color: white; /* Ensures contrast on golden background */
+    background: linear-gradient(90deg, #8B5E3C, #C19A6B, #D2B48C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Makes text pop */
+
+    /* Optional Enhancements */
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgba(193, 154, 107, 0.7); /* Subtle golden underline */
+    backdrop-filter: blur(5px); /* Slight blur to enhance readability */
+}
+
+/* Plan Cards */
+.plan-card {
+    background-color: #f9f7f3;
+    padding: 25px;
+    width: 28%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Plan Titles */
+.plan-card h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #663300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Plan Prices */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #86373e;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Plan Features List */
+.plan-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.plan-card ul li {
+    margin-bottom: 12px;
+    text-align:  left;
+}
+
+/* Button Styles */
+.subscribe-button {
+    font-family: Arial, sans-serif;
+    background-color: #e6e0cf;
+    color: #663300;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subscribe-button:hover {
+    background-color: #86373e;
+    color: white;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .plan-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .plan-card ul li {
+        font-size: 16px;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-image: url(../images/footer_bg.png);
+    background-size: contain; /* Ensures the full image is displayed */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+    background-color: #ece9e2; /* Light beige background */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    text-align: center;
+    min-height: 400px; /* Adjust height if needed */
+    border-top: solid;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    padding: 10px;
+    position: relative;
+}
+
+
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #86373E;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    align-items: left;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-column ul li a:hover {
+    color: #86373E;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: 1px solid #86373E;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-column button {
+    background-color: #86373E;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    background-color: #333;
+}
+
+.reach-out {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reach-out a {
+    font-size: 2.0rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reach-out a:hover {
+    color: #86373E;
+}
+
+
+
+.footer-message {
+    padding-top: 350px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.footer-copyright {
+    font-size: 1.0rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+

@@ -1,0 +1,245 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make body fill the entire viewport */
+    margin: 0;
+    font-family: serif;
+    background-color: #f8f3e2;
+    color: #333;
+ 
+}
+
+main {
+    width: 100%; /* Full width for main content */
+    max-width: 1200px; /* Restrict maximum width */
+    text-align: center; /* Center text inside the main content */
+    margin: 0 auto; /* Center the main element itself within the body */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    justify-content: center; /* Center child elements vertically */
+    min-height: calc(100vh - /* height of navbar */ 100px - /* height of footer */ 100px); /* 100px is just an example, replace with actual height if needed */
+}
+/* Image Styling */
+img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.navbar {
+    background-color: #e6e0cf;
+    font-family: Georgia, Garamond, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 25px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #86373E;
+}
+
+.nav-links input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#login button {
+    background-color: #f8f3e2;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Georgia;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+    color: white;
+    background-color: #86373E;
+}
+
+h1 {
+    
+    font-weight: 800;
+    margin: 3rem 0 1rem; /* Increased top margin */
+    
+}
+
+
+
+.calendar, .booking-summary {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.calendar ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.calendar ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar ul li time {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.calendar ul li price {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: palevioletred;
+}
+
+.booking-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.booking-summary h2 {
+    margin: 0;
+}
+
+.booking-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#checkout-button {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+#checkout-button:hover {
+    background-color: #45a049;
+}
+
+#checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .calendar ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.reach-out {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6e0cf;
+}
+
+.reach-out a {
+    color: #333;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.reach-out a:hover {
+    color: #86373E;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #e6e0cf;
+    font-size: 25px;
+    color: #333;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+footer.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
