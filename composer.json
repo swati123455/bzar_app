@@ -1,0 +1,8 @@
+{
+  "name": "l-abdulla/bzar",
+  "description": "A PHP application",
+  "require": {
+    "php": "^7.4|^8.0"
+  }
+   
+}

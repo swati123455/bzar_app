@@ -1,0 +1,41 @@
+<!-- Footer Section -->
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>BZAR</h3>
+                <ul>
+                    <li><a href="Homepage.php">Homepage</a></li>
+                    <li><a href="Recipes.php">Recipes</a></li>
+                    <li><a href="About-Us.php">About Us</a></li>
+                    <li><a href="Plus.php">Plus</a></li>
+                    <li><a href="Courses.php">Courses</a></li>
+                    <li><a href="Booking.php">Booking</a></li>
+                    <li><a href="OurChefs.php">Our Chefs</a></li>
+                    <li><a href="LoginandSignup.php">Login</a></li>
+                    <li><a href="LoginandSignup.php">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>GET OUR NEWSLETTER</h3>
+                <p>Join our community to get the latest recipes, news, updates, and special offers delivered directly to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email here..." />
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-column">
+                <h3>Reach Out</h3>
+                <div class="reach-out">
+                    <a href="mailto:bzar.team.qa@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+97412345678"><i class="fa fa-phone"></i></a>
+                    <a href="https://wa.me/97412345678"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-message">Made with ♡ in Qatar</p>
+        <p class="footer-copyright">© 2028 BZAR. All rights reserved.</p>
+    </footer>
